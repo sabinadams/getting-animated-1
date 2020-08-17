@@ -1,0 +1,73 @@
+.cardListHolder {
+    max-width: 100vw;
+    width: 100vw;
+    height: 450px;
+    white-space: nowrap;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .cardWrapper {
+        margin: 50px 20px;
+    }
+}
+
+.cardWrapper {
+    display: inline-block;
+    border-radius: 10px;
+    .profileCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        height: 300px;
+        width: 200px;
+        padding: 20px;
+        background: #cdd6e6;
+        position: relative;
+        
+        .iconHolder {
+            position: absolute;
+            right: 25px;
+            display: flex;
+            flex-direction: row;
+            a {
+                color: #48505a;
+                font-size: 20px;
+                text-decoration: none;
+                margin-right: 5px;
+                &:last-child {
+                    margin: auto;
+                }
+            }
+        }
+    
+        .test {
+            position: absolute;
+            right: 10px;
+        }
+        img {
+            height: auto;
+            width: 100px;
+            border-radius: 50%;
+        }
+    
+        .divider {
+            margin: 20px 0px 0px 0px;
+            width: 60%;
+            height: 2px;
+            border-radius: 20px;
+            background: rgba(0, 0, 0, 0.20);
+        }
+    
+        .details {
+            text-align: left;
+            font-weight: 500;
+            .name {
+                text-align: center;
+            }
+        }
+    }
+}
